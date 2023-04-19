@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+
+<body>
+    <header class="site-header ">
+        <div class="Contenedor">
+            <div class="Barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logo Bienes Raices">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/4.1 barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="Navegacion">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Anuncios.html">Anuncios</a>
+                    <a href="BLog.html">Blog</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <!--Barra-->
+        </div>
+        <!--Contenedor-->
+    </header>
+
+
+    <h1 class="fw-300 Centrar-Texto">Consejos para tener una alberca en tu casa sin gastar demasiado</h1>
+    <img src="img/destacada3.jpg" alt="Imagen Principal">
+
+    <main class="Contenedor Seccion Contenido-centrado">
+
+        <h2 class="fw-300 Centrar-Texto">Llena el formulario de Contactos</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+
+                <label for="e-mail">E-Mail:</label>
+                <input type="email" id="e-mail" placeholder="Correo Electronico" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="tlf" placeholder="Telefono" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Informacion sobre Propiedad</legend>
+                <label for="opciopnes">Venda o Compra</label>
+                <select id="opciopnes">
+
+                    <option value="" disabled selected>--Selecione--</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+
+                </select>
+
+                <label for="cantidad">Cantidad</label>
+                <input type="number" min="0">
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Contactos</legend>
+
+                <p>Como desea ser Contactado:</p>
+
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono</label>
+                    <input type="radio" name="Contacto" value="telefono" id="telefono">
+
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="Contacto" value="telefono" id="correo">
+                </div>
+
+                <p>Si eligio Telefono, elija la fecha y hora</p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="9:00" max="18:00">
+
+
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="Boton Boton-Verde">
+
+
+        </form>
+
+
+
+
+    </main>
+
+
+    <footer class="Site-foorer Seccion">
+        <div class="Contenedor Contenedor-foorer">
+            <nav class="Navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Anuncios.html">Anuncios</a>
+                <a href="BLog.html">Blog</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+
+
+            <p class="Copy">Todos los derechos reservados 2023 &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
